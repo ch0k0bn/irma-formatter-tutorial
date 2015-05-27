@@ -46,7 +46,9 @@ class BalbuzardFormatterPlugin(PluginBase):
         try:
 	    formatted_res = ""
             for (category, value_list) in raw_result['results'].items():
-                formatted_res += "{0}:\n    {1}\n".format(category, value_list)
+                formatted_res += "{0}:\n".format(category)
+                for item in value_list:
+                    formatted_res += "    {0} ({1})\n".format(item[1], item[0])
             raw_result['results'] = formatted_res
             return raw_result
         except Exception as e:
