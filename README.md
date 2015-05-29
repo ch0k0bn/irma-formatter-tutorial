@@ -13,7 +13,7 @@ your goal is to create an empty formatter.
 ## Level 1
 (branch balbuzard-level1)
 
-level 1 consist in returning a result easily displayed in a <pre></pre> field
+level 1 consist in returning a result easily displayed in a pre field
 
 ## Level 2
 (branch balbuzard-level2)
